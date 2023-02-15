@@ -7,4 +7,4 @@ Works well even in root directories. <br>
 It acts as a filter to reduce unanted search results <br>
 
 ## FYI:
-"Cari" is a malay word that translate to "Find" in english.
+"Cari" is a malay word that translates to "Find" in english.
