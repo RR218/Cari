@@ -10,7 +10,7 @@ It acts as a filter to reduce unanted search results
 ### Install
 Clone the git repo:
 ```
-git clone https://github.com/RR218/cari.git
+git clone https://github.com/RR218/Cari.git
 ```
 Change directory into cari folder:
 ```
