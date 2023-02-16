@@ -7,6 +7,7 @@ Please give it some time to process as some file names are generally used in mor
 -f : takes a word that can be related to the file searched. Eg: related directory, file extention, general path, etc. <br>
 It acts as a filter to reduce unanted search results
 
+![Example](https://github.com/RR218/Cari/blob/main/Image/Screenshot_2023-02-16_21-53-24.png)
 ### Install
 Clone the git repo:
 ```
@@ -14,7 +15,7 @@ git clone https://github.com/RR218/Cari.git
 ```
 Change directory into cari folder:
 ```
-cd cari
+cd Cari
 ```
 Make cari.sh an executable:
 ```
