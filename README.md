@@ -12,19 +12,27 @@ Clone the git repo
 ```
 git clone https://github.com/RR218/cari.git
 ```
-cd into cari
+change directory into cari folder
 ```
 cd cari
 ```
-Move cari.sh to path and rename cari.sh to cari 
+make cari.sh an executable
 ```
-sudo mv cari.sh usr/bin/cari
+chmod +x cari.sh
+```
+copy cari.sh to path and rename cari.sh to cari 
+```
+sudo cp cari.sh usr/bin/cari
 ```
 Usage
 ```
 cari foo
 or
 cari foo -f bar
+```
+Uninstall
+```
+sudo rm /usr/bin/cari
 ```
 
 ## FYI:
