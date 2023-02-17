@@ -21,7 +21,7 @@ Make cari.sh an executable:
 ```
 chmod +x cari.sh
 ```
-Copy cari.sh to path and rename cari.sh to cari:
+Copy cari.sh to $PATH and rename cari.sh to cari:
 ```
 sudo cp cari.sh usr/bin/cari
 ```
