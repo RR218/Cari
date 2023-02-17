@@ -5,7 +5,8 @@ Works well even in root directories.
 ### Usage: cari (filename) or cari (filename) -f (filter)
 Please give it some time to process as some file names are generally used in more than one directory. <br>
 -f : takes a word that can be related to the file searched. Eg: related directory, file extention, general path, etc. <br>
-It acts as a filter to reduce unanted search results
+It acts as a filter to reduce unanted search results <br>
+--help : will show you the help message.
 
 ![Example](https://github.com/RR218/Cari/blob/main/Image/Screenshot_2023-02-16_21-53-24.png)
 ### Install
