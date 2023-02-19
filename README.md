@@ -46,7 +46,7 @@ find available themes at:
 ```
 https://pygments.org/styles/
 ```
-#### Using a code editor replace the default nord theme with the themes of your choosing at line number 61 of cari.sh
+#### Using a code editor, replace the default nord theme with the themes of your choosing at line number 61 of cari.sh
 ![Example](https://github.com/RR218/Cari/blob/main/Image/screenshot2.png) <br>
 eg. from nord to paraiso-dark:
 ```
