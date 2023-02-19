@@ -19,7 +19,7 @@ Change directory into cari folder:
 ```
 cd Cari
 ```
-install requirements.txt
+install requirements.txt:
 ```
 pip install -r requirements.txt
 ```
@@ -57,7 +57,7 @@ pygmentize -f 256 -O style=paraiso-dark -g "$file" | sed 's/^/    /'
 ```
 Replace the current file in $PATH to the newly updated file:
 ```
-cp cari.sh /usr/bin/cari
+sudo cp cari.sh /usr/bin/cari
 ```
 ### Uninstall
 To uninstal cari from your system:
