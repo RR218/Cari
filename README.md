@@ -2,11 +2,11 @@
 ### A simplified find command written in bash
 Cari is a CLI based general file finder that can search for files through out your whole system. <br>
 Works well even in root directories.
-### Usage: cari (filename) or cari (filename) -f (filter)
+### Usage: cari (filename) or cari (filename) -f (filter) or cari -f (filter) -c
 Please give it some time to process as some file names are generally used in more than one directory. <br>
 -f : takes a word that can be related to the file searched. Eg: related directory, file extention, general path, etc. <br>
 It acts as a filter to reduce unanted search results <br>
--c : will cat the contents of the files <br>
+-c : will display the contents of the files <br>
 --help : will show you the help message.
 
 ![Example](https://github.com/RR218/Cari/blob/main/Image/Screenshot_2023-02-16_21-53-24.png)
@@ -40,6 +40,23 @@ or
 cari foo -c
 or
 cari foo -f bar -c
+```
+### to change syntax highlighting theme
+find available themes at:
+```
+https://pygments.org/styles/
+```
+using a code editor replace the default nord theme with the themes of your choosing at line number 61 of cari.sh
+```
+eg. from nord to paraiso-dark
+from
+pygmentize -f 256 -O style=nord -g "$file" | sed 's/^/    /'
+to
+pygmentize -f 256 -O style=paraiso-dark -g "$file" | sed 's/^/    /'
+```
+replace the current file in $path to newly updated file
+```
+cp cari.sh /usr/bin/cari
 ```
 ### Uninstall
 To uninstal cari from your system:
