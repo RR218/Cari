@@ -55,7 +55,7 @@ pygmentize -f 256 -O style=nord -g "$file" | sed 's/^/    /'
 to
 pygmentize -f 256 -O style=paraiso-dark -g "$file" | sed 's/^/    /'
 ```
-Replace the current file in $path to newly updated file:
+Replace the current file in $PATH to newly updated file:
 ```
 cp cari.sh /usr/bin/cari
 ```
