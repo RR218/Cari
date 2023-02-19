@@ -9,7 +9,7 @@ It acts as a filter to reduce unanted search results <br>
 -c : will display the contents of the files <br>
 --help : will show you the help message.
 
-![Example](https://github.com/RR218/Cari/blob/main/Image/Screenshot_2023-02-16_21-53-24.png)
+![Example](https://github.com/RR218/Cari/blob/main/images/Screenshot1.png)
 ### Install
 Clone the git repo:
 ```
@@ -47,7 +47,7 @@ find available themes at:
 https://pygments.org/styles/
 ```
 #### Using a code editor, replace the default nord theme with the themes of your choosing at line number 61 of cari.sh
-![Example](https://github.com/RR218/Cari/blob/main/Image/screenshot2.png) <br>
+![Example](https://github.com/RR218/Cari/blob/main/images/screenshot2.png) <br>
 eg. from nord to paraiso-dark:
 ```
 from
