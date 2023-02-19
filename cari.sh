@@ -46,7 +46,8 @@ done
 # Use find to search for files whose names contain the provided string
 # The "-name" option limits the search to files with the specified name pattern
 # The "-print" option prints the path of each file found
-output=$(find / -name "*$filename*" -print 2>/dev/null | while read file; do
+# Filter the results with grep if -f is specified
+output=$(find / -name "*$filename*" -print 2>/dev/null | if [ -n "$second_arg" ]; then grep "$second_arg"; else cat; fi | while read file; do
   # Print the path of the file
   printf "\033[32mFound file: %s\033[0m\n" "$file"
   
@@ -70,7 +71,8 @@ if [ -z "$output" ]; then
   echo "Error: no files found with name containing \"$filename\""
   exit 1
 else
-  echo "$output" | if [ -n "$second_arg" ]; then grep "$second_arg"; else cat; fi
+  echo "$output"
   exit 0
 fi
+
 
