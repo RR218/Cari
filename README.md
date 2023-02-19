@@ -4,11 +4,17 @@ Cari is a CLI based general file finder that can search for files through out yo
 Works well even in root directories.
 ## Usage: 
 "cari (filename)" or "cari (filename) -f (filter)" or "cari (filename) -f (filter) -c" <br>
-Please give it some time to process as some file names are generally used in more than one directory. <br>
+| Arguement    | Description                                         |
+|--------------|-----------------------------------------------------|
+|    -f        | Filter the search to reduce unwanted search results |
+|    -c        | Display the contents of the files                   |
+|  --help      | Display help message                                |
+
 -f : takes a word that can be related to the file searched. Eg: related directory, file extention, general path, etc.
 It acts as a filter to reduce unanted search results <br>
 -c : will display the contents of the files <br>
---help : will show you the help message.
+--help : will show you the help message. <br>
+Please give it some time to process as some file names are generally used in more than one directory. <br>
 
 ![Example](https://github.com/RR218/Cari/blob/main/images/Screenshot1.png)
 ## Install
