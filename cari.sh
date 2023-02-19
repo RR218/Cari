@@ -2,8 +2,9 @@
 
 # Locate a file in the system
 usage() {
-  echo "Usage: cari <filename> or cari <filename> -f <filter> "
-  echo "  -f: takes an optional word that can relate to the search to reduce unwanted resaults"
+  echo "Usage: cari <filename> or cari <filename> [-f <filter>] [-c]"
+  echo "  -f: takes an optional word that can relate to the search to reduce unwanted results"
+  echo "  -c: displays the content of the found file"
   echo "  --help: display this help message"
 }
 
@@ -22,12 +23,16 @@ filename="$1"
 shift
 
 second_arg=""
+content_flag=""
 
 while [ "$#" -gt 0 ]; do
   case $1 in
-    -f)
+    -f|--filter)
       shift
       second_arg="$1"
+      ;;
+    -c|--content)
+      content_flag=1
       ;;
     *)
       echo "Error: invalid argument $1"
@@ -43,18 +48,22 @@ done
 # The "-print" option prints the path of each file found
 output=$(find / -name "*$filename*" -print 2>/dev/null | while read file; do
   # Print the path of the file
-  echo -e "\033[32mFound file: $file\033[0m"
+  printf "\033[32mFound file: %s\033[0m\n" "$file"
   
   # Print the directory containing the file
-  dirname "$file"
+  printf "%s\n" "$(dirname "$file")"
   
-  # Print the contents of the file, if it's a text file
-  # if file "$file" | grep -q "text"; then
-    # echo "File contents:"
-    # cat "$file"
-  # fi
+  if [ -n "$content_flag" ]; then
+    # Print the contents of the file, if it's a text file
+    if file "$file" | grep -q "text"; then
+      printf "\nFile contents:\n"
+      pygmentize -f 256 -O style=nord -g "$file" | sed 's/^/    /'
+    else
+      printf "\nFile is not a text file. Cannot display contents.\n"
+    fi
+  fi
   
-  echo
+  printf "\n"
 done)
 
 if [ -z "$output" ]; then
@@ -64,3 +73,4 @@ else
   echo "$output" | if [ -n "$second_arg" ]; then grep "$second_arg"; else cat; fi
   exit 0
 fi
+
