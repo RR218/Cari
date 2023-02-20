@@ -38,7 +38,7 @@ chmod +x cari.sh
 ```
 sudo cp cari.sh usr/bin/cari
 ```
-**Usage:**
+## Usage
 ```
 cari foo
 ```
@@ -63,10 +63,12 @@ Using a code editor, replace the default nord theme with the themes of your choo
 ![Example](https://github.com/RR218/Cari/blob/main/images/screenshot2.png)
 <br>
 **eg. from nord to paraiso-dark:**
-```
 from
+```
 pygmentize -f 256 -O style=nord -g "$file" | sed 's/^/    /'
+```
 to
+```
 pygmentize -f 256 -O style=paraiso-dark -g "$file" | sed 's/^/    /'
 ```
 **Replace the current file in $PATH to the newly updated file:**
@@ -80,4 +82,4 @@ sudo rm /usr/bin/cari
 ```
 
 ## FYI:
-"Cari" is a malay word that translates to "Find" in english.
+"Cari" is a Malay word that translates to "Find" in English.
