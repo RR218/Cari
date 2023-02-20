@@ -63,11 +63,11 @@ Using a code editor, replace the default nord theme with the themes of your choo
 ![Example](https://github.com/RR218/Cari/blob/main/images/screenshot2.png)
 <br>
 **eg. from nord to paraiso-dark:** <br>
-from
+From
 ```
 pygmentize -f 256 -O style=nord -g "$file" | sed 's/^/    /'
 ```
-to
+To
 ```
 pygmentize -f 256 -O style=paraiso-dark -g "$file" | sed 's/^/    /'
 ```
