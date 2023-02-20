@@ -3,12 +3,12 @@
 # Locate a file in the system
 usage() {
   echo "Usage: cari <filename> or cari <filename> [-f <filter>] [-c]"
-  echo "  -f: takes an optional word that can relate to the search to reduce unwanted results"
-  echo "  -c: displays the content of the found file"
-  echo "  --help: display this help message"
+  echo " -f --file: takes an optional word that can relate to the search to reduce unwanted results"
+  echo " -c --content: displays the content of the found file"
+  echo " -h --help: display this help message"
 }
 
-if [ "$1" == "--help" ]; then
+if [[ "$1" == "--help" || "$1" == "-h" ]]; then
   usage
   exit 0
 fi
