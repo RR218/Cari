@@ -11,11 +11,10 @@ Works well even in root directories.
 |  -h --help    | Display help message                                |
 
 * -f or --filter : Takes a word that can be related to the file searched. Eg: related directory, file extention, general path, etc.
-It acts as a filter to reduce unanted search results <br>
-* -c or --content : Will display the contents of the files <br>
-* -h or --help : Will show you the help message. <br>
-Please give it some time to process as some file names are generally used in more than one directory. <br>
-
+It acts as a filter to reduce unanted search results.
+* -c or --content : Will display the contents of the files.
+* -h or --help : Will show you the help message.
+#### Please give it some time to process as some file names are generally used in more than one directory.
 ![Example](https://github.com/RR218/Cari/blob/main/images/Screenshot1.png)
 ## Install
 **Clone the git repo:**
