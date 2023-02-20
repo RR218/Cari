@@ -3,7 +3,7 @@
 # Locate a file in the system
 usage() {
   echo "Usage: cari <filename> or cari <filename> [-f <filter>] [-c]"
-  echo " -f --file: takes an optional word that can relate to the search to reduce unwanted results"
+  echo " -f --filter: takes an optional word that can relate to the search to reduce unwanted results"
   echo " -c --content: displays the content of the found file"
   echo " -h --help: display this help message"
 }
