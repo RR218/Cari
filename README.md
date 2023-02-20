@@ -26,7 +26,7 @@ git clone https://github.com/RR218/Cari.git
 ```
 cd Cari
 ```
-**install requirements.txt:**
+**Install requirements.txt:**
 ```
 pip install -r requirements.txt
 ```
