@@ -55,7 +55,7 @@ cari foo -c
 cari foo -f bar -c
 ```
 ## To change syntax highlighting theme
-**find available themes at:**
+**Find available themes at**
 ```
 https://pygments.org/styles/
 ```
