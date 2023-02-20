@@ -41,11 +41,17 @@ sudo cp cari.sh usr/bin/cari
 **Usage:**
 ```
 cari foo
-or
+```
+-or-
+```
 cari foo -f bar
-or
+```
+-or-
+```
 cari foo -c
-or
+```
+-or-
+```
 cari foo -f bar -c
 ```
 ## To change syntax highlighting theme
@@ -53,8 +59,9 @@ cari foo -f bar -c
 ```
 https://pygments.org/styles/
 ```
-Using a code editor, replace the default nord theme with the themes of your choosing at line number 61 of cari.sh <br>
-![Example](https://github.com/RR218/Cari/blob/main/images/screenshot2.png) <br>
+Using a code editor, replace the default nord theme with the themes of your choosing at line number 61 of cari.sh <b> 
+![Example](https://github.com/RR218/Cari/blob/main/images/screenshot2.png)
+<br>
 **eg. from nord to paraiso-dark:**
 ```
 from
