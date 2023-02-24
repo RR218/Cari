@@ -34,7 +34,7 @@ pip install -r requirements.txt
 chmod +x cari.sh
 ```
 **Copy cari.sh to $PATH and rename cari.sh to cari:** <br>
-Sudo privlages
+Sudo privleges
 ```
 cp cari.sh usr/bin/cari
 ```
@@ -72,13 +72,13 @@ To
 pygmentize -f 256 -O style=paraiso-dark -g "$file" | sed 's/^/    /'
 ```
 **Replace the current file in $PATH to the newly updated file:** <br>
-Sudo privlages
+Sudo privleges
 ```
 cp cari.sh /usr/bin/cari
 ```
 ## Uninstall
 **To uninstal cari from your system:** <br>
-Sudo privlages
+Sudo privleges
 ```
 rm /usr/bin/cari
 ```
