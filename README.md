@@ -71,13 +71,13 @@ To
 ```
 pygmentize -f 256 -O style=paraiso-dark -g "$file" | sed 's/^/    /'
 ```
-**Replace the current file in $PATH to the newly updated file:**
+**Replace the current file in $PATH to the newly updated file:** <br>
 !!! Sudo privlages needed !!!
 ```
 cp cari.sh /usr/bin/cari
 ```
 ## Uninstall
-**To uninstal cari from your system:**
+**To uninstal cari from your system:** <br>
 !!! Sudo privlages needed !!!
 ```
 rm /usr/bin/cari
