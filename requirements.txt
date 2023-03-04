@@ -1,2 +1,3 @@
 Pygments
 nord-pygments
+pygments_zenburn
