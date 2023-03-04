@@ -2,3 +2,4 @@ Pygments
 nord-pygments
 pygments_zenburn
 pygments-style-dracula
+accessible-pygments
