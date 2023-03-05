@@ -58,7 +58,7 @@ cari foo -f bar -c
 ### Available styles
 "zenburn", "nord", "dracula", "a11y-dark", "a11y-high-contrast-dark", "pitaya-smoothie", "github-light", "github-dark", "github-light-colorblind",
 "github-dark-colorblind", "github-light-high-contrast", "github-dark-high-contrast", "gotthard-dark", "a11y-light", "a11y-high-contrast-light", "gotthard-light",
-"blinds-light", "blinds-dark", "greative"
+"blinds-light", "blinds-dark", "greative", "molokai"
 
 ### Change styles
 Using a code editor, replace the default nord theme with the themes of your choosing at line number 61 of cari.sh <b> 
