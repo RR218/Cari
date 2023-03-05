@@ -58,6 +58,7 @@ output=$(find / -name "*$filename*" -print 2>/dev/null | if [ -n "$second_arg" ]
     # Print the contents of the file, if it's a text file
     if file "$file" | grep -q "text"; then
       printf "\nFile contents:\n"
+      # Available Styles: "zenburn", "nord", "dracula", "a11y-dark", "a11y-high-contrast-dark", "pitaya-smoothie", "github-light", "github-dark", "github-light-colorblind", "github-dark-colorblind", "github-light-high-contrast", "github-dark-high-contrast", "gotthard-dark", "a11y-light", "a11y-high-contrast-light", "gotthard-light", "blinds-light", "blinds-dark", "greative"
       pygmentize -f 256 -O style=nord -g "$file" | sed 's/^/    /'
     else
       printf "\nFile is not a text file. Cannot display contents.\n"
