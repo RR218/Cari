@@ -28,6 +28,8 @@ cd Cari
 **Install requirements.txt:**
 ```
 pip install -r requirements.txt
+or
+install the contents of requirements.txt via your system package manager if available
 ```
 **Make cari.sh an executable:**
 ```
